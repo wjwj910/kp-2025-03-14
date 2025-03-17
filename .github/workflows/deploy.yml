@@ -9,6 +9,12 @@ on:
       - 'Dockerfile'
     branches:
       - main
+
+permissions:
+  contents: write   # 저장소에 대한 쓰기 권한
+  packages: write   # GitHub Packages에 대한 쓰기 권한
+  id-token: write   # GitHub Actions의 인증 토큰을 쓸 수 있도록
+
 jobs:
   makeTagAndRelease:
     runs-on: ubuntu-latest
