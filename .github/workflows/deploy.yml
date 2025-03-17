@@ -9,6 +9,7 @@ on:
       - 'Dockerfile'
     branches:
       - main
+
 jobs:
   makeTagAndRelease:
     runs-on: ubuntu-latest
